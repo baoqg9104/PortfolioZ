@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 import avatar from "../assets/avatar.png";
-import aboutMe from "../assets/about-me.png";
+// import aboutMe from "../assets/about-me.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGithub } from "@fortawesome/free-brands-svg-icons";
