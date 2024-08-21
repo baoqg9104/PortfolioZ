@@ -6,6 +6,7 @@ import {
   faComment,
   faEnvelope,
   faHouse,
+  faUser,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
@@ -38,10 +39,12 @@ function Navbar() {
     };
   }, []);
 
-
   return (
     <>
-      <nav className="navbar navbar-expand-lg position-fixed w-100">
+      <nav
+        className="navbar navbar-expand-lg position-fixed w-100"
+        style={{ zIndex: "1000" }}
+      >
         <div className="container">
           <div className={`col-6 fw-bold ${styles.brand}`}>
             Portfolio<span>Z</span>
@@ -81,7 +84,7 @@ function Navbar() {
                   />
                 )}
 
-                 <NavLink
+                <NavLink
                   to="/PortfolioZ/"
                   end
                   className={({ isActive }) =>
@@ -91,9 +94,35 @@ function Navbar() {
                   }
                 >
                   Home
-                </NavLink> 
+                </NavLink>
               </div>
               <hr className="text-light" />
+              <div>
+                {isExpanded && (
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    style={{
+                      color: "#ffffff",
+                      display: "inline-block",
+                    }}
+                  />
+                )}
+
+                <NavLink
+                  to="/PortfolioZ/about"
+                  end
+                  className={({ isActive }) =>
+                    `nav-link me-5 d-inline ms-3 ${
+                      isExpanded ? styles.navLinkExpanded : styles.navLink
+                    } ${isActive ? styles.active : ""}`
+                  }
+                >
+                  About
+                </NavLink>
+              </div>
+
+              <hr className="text-light" />
+
               <div>
                 {isExpanded && (
                   <FontAwesomeIcon
@@ -115,6 +144,7 @@ function Navbar() {
                 </a>{" "} */}
                 <NavLink
                   to="/PortfolioZ/project"
+                  end
                   className={({ isActive }) =>
                     `nav-link me-5 d-inline ms-3 ${
                       isExpanded ? styles.navLinkExpanded : styles.navLink
@@ -147,6 +177,7 @@ function Navbar() {
                 </a>{" "} */}
                 <NavLink
                   to="/PortfolioZ/blog"
+                  end
                   className={({ isActive }) =>
                     `nav-link me-5 d-inline ms-3 ${
                       isExpanded ? styles.navLinkExpanded : styles.navLink
@@ -180,6 +211,7 @@ function Navbar() {
                 </a> */}
                 <NavLink
                   to="/PortfolioZ/contact"
+                  end
                   className={({ isActive }) =>
                     `nav-link me-5 d-inline ms-3 ${
                       isExpanded ? styles.navLinkExpanded : styles.navLink

@@ -1,12 +1,13 @@
-import styles from "../styles/Home.module.css";
-import avatar from "../assets/avatar.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/About.module.css"
+import aboutMe from "../assets/about-me.png"
 import { faFacebookF, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+function About() {
+
   const [isHoverGmail, setIsHoverGmail] = useState(false);
   const [isCopy, setIsCopy] = useState(false);
 
@@ -19,48 +20,50 @@ function Home() {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/PortfolioZ/about");
+    navigate('/PortfolioZ/'); 
   }
 
   return (
     <>
-      <div className={`${styles.background} container-fluid`}>
+      <div className={`container-fluid ${styles.backgroundAboutMe}`}>
         <div className="row h-100">
-          <div
-            className="col-5 d-flex flex-column justify-content-center align-items-center mb-5"
-            style={{ paddingLeft: "200px" }}
-          >
-            <div className="w-100">
-              <h2 className="fw-light" style={{ textAlign: "start" }}>
-                Hello, I'm
-              </h2>
+          <div className="col-5 d-flex flex-column justify-content-center align-items-center mt-3">
+            <div className="mb-2">
+              <h1 className="fw-bold" style={{ fontSize: "60px" }}>
+                About <span style={{ color: "#03c7d1" }}>me</span>
+              </h1>
             </div>
-            <div className="w-100">
-              <h1 style={{ fontSize: "55px" }}>Quach Gia Bao</h1>
+            <div className="fs-5">
+              <p>
+                Full name: <span>Quach Gia Bao</span>
+              </p>
+              <p>
+                Date of birth: <span>09/01/2004</span>
+              </p>
+              <p>
+                Education: <span>FPT University</span>
+              </p>
+              <p>
+                Phone: <span>0967 508 274</span>
+              </p>
+              <p>
+                Email: <span>baoqg9104@gmail.com</span>
+              </p>
             </div>
-            <div className="d-flex w-100 mt-3">
+            <div className="w-100" style={{ paddingLeft: "170px" }}>
               <button
                 className={`text-center text-light btn rounded rounded-5 ps-4 pe-4 p-2 ${styles.aboutMe}`}
                 style={{ backgroundColor: "#00adb5", fontSize: "18px" }}
                 onClick={handleNavigate}
               >
-                About me
-              </button>
-              <button
-                className={`text-center ms-5 text-light btn rounded rounded-5 ps-4 pe-4 p-2 ${styles.downloadCV}`}
-                style={{ backgroundColor: "#343840", fontSize: "18px" }}
-              >
-                Download CV{" "}
-                <FontAwesomeIcon
-                  icon={faDownload}
-                  style={{ color: "#ffffff" }}
-                />
+                Home
               </button>
             </div>
           </div>
-          <div className="col-6 d-flex flex-column justify-content-center align-items-center">
-            <div className={`${styles.avatar}`}>
-              <img src={avatar} alt="" width={"450px"} />
+
+          <div className="col-6 d-flex flex-column align-items-center">
+            <div className="">
+              <img src={aboutMe} alt="" />
             </div>
           </div>
           <div className="col-1 d-flex flex-column justify-content-center align-items-center">
@@ -116,10 +119,8 @@ function Home() {
           </div>
         </div>
       </div>
-
-      
     </>
   );
 }
 
-export default Home;
+export default About;

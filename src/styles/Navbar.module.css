@@ -18,7 +18,7 @@
 }
 
 .navLink.active {
-  color: #00adb5;
+  color: #00adb5 !important;
   /* font-weight: 700 !important; */
 }
 
@@ -53,9 +53,11 @@
   border: none !important;
 }
 
+
 @media (max-width: 575.98px) {
   .brand {
     font-size: 33px;
   }
   
 }
+

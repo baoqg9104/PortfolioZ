@@ -5,22 +5,22 @@ import Home from "./components/Home";
 import Project from "./components/Project";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <div className={styles.body}>
-          <Navbar></Navbar>
-          <Routes>
-            <Route path="/PortfolioZ/" element={ <Home></Home> } />
-            <Route path="/PortfolioZ/project" element={<Project></Project>}></Route>
-            <Route path="/PortfolioZ/blog" element={<Blog></Blog>}></Route>
-            <Route path="/PortfolioZ/contact" element={<Contact></Contact>}></Route>
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <div className={styles.body}>
+        <Navbar />
+        <Routes>
+          <Route path="/PortfolioZ/" element={<Home />} />
+          <Route path="/PortfolioZ/about" element={<About />} />
+          <Route path="/PortfolioZ/project" element={<Project />} />
+          <Route path="/PortfolioZ/blog" element={<Blog />} />
+          <Route path="/PortfolioZ/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
