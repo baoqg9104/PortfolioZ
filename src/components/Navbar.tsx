@@ -38,6 +38,7 @@ function Navbar() {
     };
   }, []);
 
+
   return (
     <>
       <nav className="navbar navbar-expand-lg position-fixed w-100">
@@ -79,18 +80,10 @@ function Navbar() {
                     }}
                   />
                 )}
-                {/* <a
-                  className={`nav-link me-5 d-inline ms-3 ${
-                    isExpanded ? styles.navLinkExpanded : styles.navLink
-                  } ${activePage === "Home" && styles.active}`}
-                  aria-current="page"
-                  href="/Home"
-                  onClick={() => setActivePage("Home")}
-                >
-                  Home
-                </a>{" "} */}
-                <NavLink
-                  to="/"
+
+                 <NavLink
+                  to="/PortfolioZ/"
+                  end
                   className={({ isActive }) =>
                     `nav-link me-5 d-inline ms-3 ${
                       isExpanded ? styles.navLinkExpanded : styles.navLink
@@ -98,7 +91,7 @@ function Navbar() {
                   }
                 >
                   Home
-                </NavLink>
+                </NavLink> 
               </div>
               <hr className="text-light" />
               <div>
@@ -121,7 +114,7 @@ function Navbar() {
                   Project
                 </a>{" "} */}
                 <NavLink
-                  to="/Project"
+                  to="/PortfolioZ/project"
                   className={({ isActive }) =>
                     `nav-link me-5 d-inline ms-3 ${
                       isExpanded ? styles.navLinkExpanded : styles.navLink
@@ -153,7 +146,7 @@ function Navbar() {
                   Blog
                 </a>{" "} */}
                 <NavLink
-                  to="/Blog"
+                  to="/PortfolioZ/blog"
                   className={({ isActive }) =>
                     `nav-link me-5 d-inline ms-3 ${
                       isExpanded ? styles.navLinkExpanded : styles.navLink
@@ -186,7 +179,7 @@ function Navbar() {
                   Contact
                 </a> */}
                 <NavLink
-                  to="/Contact"
+                  to="/PortfolioZ/contact"
                   className={({ isActive }) =>
                     `nav-link me-5 d-inline ms-3 ${
                       isExpanded ? styles.navLinkExpanded : styles.navLink

@@ -13,10 +13,10 @@ function App() {
         <div className={styles.body}>
           <Navbar></Navbar>
           <Routes>
-            <Route path="/" element={ <Home></Home> } />
-            <Route path="/Project" element={<Project></Project>}></Route>
-            <Route path="/Blog" element={<Blog></Blog>}></Route>
-            <Route path="/Contact" element={<Contact></Contact>}></Route>
+            <Route path="/PortfolioZ/" element={ <Home></Home> } />
+            <Route path="/PortfolioZ/project" element={<Project></Project>}></Route>
+            <Route path="/PortfolioZ/blog" element={<Blog></Blog>}></Route>
+            <Route path="/PortfolioZ/contact" element={<Contact></Contact>}></Route>
           </Routes>
         </div>
       </BrowserRouter>
