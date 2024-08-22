@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
 import avatar from "../assets/avatar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -40,11 +40,16 @@ function Home() {
             </div>
             <div className="d-flex w-100 mt-3">
               <button
-                className={`text-center text-light btn rounded rounded-5 ps-4 pe-4 p-2 ${styles.aboutMe}`}
+                className={`text-center text-light btn rounded rounded-5 ps-3 pe-4 p-2 ${styles.aboutMe}`}
                 style={{ backgroundColor: "#00adb5", fontSize: "18px" }}
                 onClick={handleNavigate}
               >
-                About me
+                <FontAwesomeIcon
+                  icon={faUser}
+                  style={{ color: "#ffffff", marginRight: "8px" }}
+                />
+                <span style={{color: "white", fontSize: "18px", fontWeight: "550"}}>About me</span>
+                {/* About me */}
               </button>
               <button
                 className={`text-center ms-5 text-light btn rounded rounded-5 ps-4 pe-4 p-2 ${styles.downloadCV}`}

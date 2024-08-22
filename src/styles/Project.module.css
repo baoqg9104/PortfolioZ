@@ -1,0 +1,25 @@
+.filterItem {
+  background-color: rgba(68, 78, 91, 0.7) !important;
+  color: white !important;
+  margin-left: 18px;
+}
+
+.filterItem span {
+  text-shadow: 0px 2px 5px rgb(0, 0, 0);
+}
+
+.filterItem.active {
+  background-color: #00bbc5 !important;  
+}
+
+.background {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    336deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 237, 234, 1) 0%,
+    rgba(238, 232, 223, 1) 7%,
+    rgba(205, 233, 219, 1) 100%
+  );
+  height: 100vh;
+}

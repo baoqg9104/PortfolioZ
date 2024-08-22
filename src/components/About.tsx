@@ -2,7 +2,7 @@ import styles from "../styles/About.module.css"
 import aboutMe from "../assets/about-me.png"
 import { faFacebookF, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -52,11 +52,15 @@ function About() {
             </div>
             <div className="w-100" style={{ paddingLeft: "170px" }}>
               <button
-                className={`text-center text-light btn rounded rounded-5 ps-4 pe-4 p-2 ${styles.aboutMe}`}
+                className={`text-center btn rounded rounded-5 ps-3 pe-4 p-2 ${styles.aboutMe}`}
                 style={{ backgroundColor: "#00adb5", fontSize: "18px" }}
                 onClick={handleNavigate}
               >
-                Home
+                <FontAwesomeIcon
+                icon={faHome}
+                style={{ color: "#ffffff", marginRight: "8px" }}
+              />
+                <span style={{color: "white", fontSize: "20px"}}>Home</span>
               </button>
             </div>
           </div>
