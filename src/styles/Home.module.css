@@ -49,3 +49,40 @@
   border-radius: 30px;
 }
 
+.avatarContainer {
+  display: flex;
+}
+
+.mainText {
+  padding-left: 200px !important;
+}
+
+.brandList {
+  flex-direction: column;
+}
+
+@media (max-width: 575.98px) {
+  .avatarContainer {
+    display: none;
+  }
+  
+  .mainText {
+    padding-left: 30px !important;
+    /* padding-right: 20px !important; */
+    /* text-align: center; */
+    width: 100% !important;
+
+  }
+
+  .brandList {
+    flex-direction: row;
+    width: 100% !important;
+  }
+
+  .brandIcon {
+    margin-left: 15px;
+  }
+  
+}
+
+

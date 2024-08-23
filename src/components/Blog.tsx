@@ -13,7 +13,7 @@ function Blog() {
             style={{
               fontSize: "50px",
               color: "white",
-              textShadow: "1.5px 1.5px 3px black",
+              // textShadow: "1.5px 1.5px 3px black",
             }}
           >
             My{" "}

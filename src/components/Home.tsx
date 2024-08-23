@@ -25,10 +25,10 @@ function Home() {
   return (
     <>
       <div className={`${styles.background} container-fluid`}>
-        <div className="row h-100">
+        <div className={`row h-100`}>
           <div
-            className="col-5 d-flex flex-column justify-content-center align-items-center mb-5"
-            style={{ paddingLeft: "200px" }}
+            className={`col-5 d-flex flex-column justify-content-center align-items-center mb-5 ${styles.mainText}`}
+            // style={{ paddingLeft: "200px" }}
           >
             <div className="w-100">
               <h2 className="fw-light" style={{ textAlign: "start" }}>
@@ -63,12 +63,12 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className="col-6 d-flex flex-column justify-content-center align-items-center">
+          <div className={`col-6 flex-column justify-content-center align-items-center ${styles.avatarContainer}`}>
             <div className={`${styles.avatar}`}>
               <img src={avatar} alt="" width={"450px"} />
             </div>
           </div>
-          <div className="col-1 d-flex flex-column justify-content-center align-items-center">
+          <div className={`col-1 d-flex justify-content-center align-items-center ${styles.brandList}`}>
             <a
               className={`${styles.brandIcon} mb-4`}
               href="https://www.facebook.com/gbao307"
