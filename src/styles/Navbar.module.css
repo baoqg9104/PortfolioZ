@@ -20,6 +20,7 @@
 .navLink.active {
   color: #00adb5 !important;
   /* font-weight: 700 !important; */
+  /* text-shadow: 1px 1px 1px rgb(88, 88, 88); */
 }
 
 .navLinkExpanded.active {
