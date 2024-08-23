@@ -27,7 +27,7 @@ function About() {
     <>
       <div className={`container-fluid ${styles.backgroundAboutMe}`}>
         <div className="row h-100">
-          <div className="col-5 d-flex flex-column justify-content-center align-items-center mt-3">
+          <div className={`col-5 d-flex flex-column justify-content-center align-items-center ${styles.main}`}>
             <div className="mb-2">
               <h1 className="fw-bold" style={{ fontSize: "60px" }}>
                 About <span style={{ color: "#03c7d1" }}>me</span>
@@ -65,12 +65,12 @@ function About() {
             </div>
           </div>
 
-          <div className="col-6 d-flex flex-column align-items-center">
+          <div className={`col-6 flex-column align-items-center ${styles.image}`}>
             <div className="">
-              <img src={aboutMe} alt="" />
+              <img className={styles.aboutMeImg} src={aboutMe} alt="" />
             </div>
           </div>
-          <div className="col-1 d-flex flex-column justify-content-center align-items-center">
+          <div className={`col-1 d-flex justify-content-center align-items-center ${styles.brandList}`}>
             <a
               className={`${styles.brandIcon} mb-4`}
               href="https://www.facebook.com/gbao307"
@@ -82,7 +82,7 @@ function About() {
               />
             </a>
             <div
-              className={`${styles.brandIcon} mb-4 ${styles.gmailIcon}`}
+              className={`${styles.brandIcon} mb-4 ${styles.gmailIcon} ${styles.brandItem}`}
               onMouseEnter={() => setIsHoverGmail(true)}
               onMouseLeave={() => setIsHoverGmail(false)}
               onClick={handleCopy}
@@ -111,7 +111,7 @@ function About() {
             </div>
 
             <a
-              className={`${styles.brandIcon} mb-4`}
+              className={`${styles.brandIcon} mb-4 ${styles.brandItem}`}
               href="https://github.com/baoqg9104"
               target="_blank"
             >

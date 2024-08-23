@@ -50,3 +50,37 @@
   color: white;
   border-radius: 30px;
 }
+
+.brandList {
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+}
+
+@media (max-width: 575.98px) {
+  .aboutMeImg {
+    display: none;
+  }
+
+  .main {
+    width: 100% !important;
+    margin-top: 70px !important;
+  }
+
+  .brandList {
+    flex-direction: row !important;
+    width: 100% !important;
+  }
+
+  .brandItem {
+    margin-left: 15px;
+
+  }
+
+  .image {
+    display: none;
+  }
+
+}
