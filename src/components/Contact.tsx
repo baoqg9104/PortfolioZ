@@ -29,9 +29,11 @@ function Contact() {
       .then(
         (response) => {
           toast.success('Message sent successfully!');
+          console.log(response);
         },
         (err) => {
           toast.error('Failed to send message. Please try again later.');
+          console.log(err);
         }
       );
   };
