@@ -92,6 +92,7 @@ function Navbar() {
                       isExpanded ? styles.navLinkExpanded : styles.navLink
                     } ${isActive ? styles.active : ""}`
                   }
+                  onClick={() => {setIsExpanded(false)}}
                 >
                   Home
                 </NavLink>
@@ -116,6 +117,7 @@ function Navbar() {
                       isExpanded ? styles.navLinkExpanded : styles.navLink
                     } ${isActive ? styles.active : ""}`
                   }
+                  onClick={() => {setIsExpanded(false)}}
                 >
                   About
                 </NavLink>
@@ -150,6 +152,7 @@ function Navbar() {
                       isExpanded ? styles.navLinkExpanded : styles.navLink
                     } ${isActive ? styles.active : ""}`
                   }
+                  onClick={() => {setIsExpanded(false)}}
                 >
                   Project
                 </NavLink>
@@ -183,6 +186,7 @@ function Navbar() {
                       isExpanded ? styles.navLinkExpanded : styles.navLink
                     } ${isActive ? styles.active : ""}`
                   }
+                  onClick={() => {setIsExpanded(false)}}
                 >
                   Blog
                 </NavLink>
@@ -217,6 +221,7 @@ function Navbar() {
                       isExpanded ? styles.navLinkExpanded : styles.navLink
                     } ${isActive ? styles.active : ""}`
                   }
+                  onClick={() => {setIsExpanded(false)}}
                 >
                   Contact
                 </NavLink>

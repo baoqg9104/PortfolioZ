@@ -78,3 +78,13 @@
 .link:hover {
   text-decoration: underline !important;
 }
+
+@media (max-width: 575.98px) {
+  .customModal {
+    width: 95%;
+  }
+
+  .closeButton {
+    right: 2%;
+  }
+}
