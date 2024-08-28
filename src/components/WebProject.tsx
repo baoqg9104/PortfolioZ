@@ -1,12 +1,14 @@
 import calculatorZ_img from "../assets/calculatorZ.png";
 import _300baicodeZ_img from "../assets/300baicodeZ.jpg";
 import ProjectTag from "./ProjectTag";
+import musicZ from "../assets/musicZ.png";
+
 
 function WebProject() {
   return (
     <>
       <div className="row d-flex justify-content-center align-items-center w-100 mt-5">
-      <div className="col-lg-3 col-sm-4 mt-4">
+        <div className="col-lg-3 col-sm-4 mt-4">
           <ProjectTag
             _backgroundImage={_300baicodeZ_img}
             name="300 Bài Code Thiếu Nhi"
@@ -27,7 +29,14 @@ function WebProject() {
           />
         </div>
         <div className="col-lg-3 col-sm-4 mt-4">
-          {/* <ProjectTag _backgroundImage={calculatorZ_img} name="300 Bài Code Thiếu Nhi"/> */}
+          <ProjectTag
+            _backgroundImage={musicZ}
+            name="MusicZ"
+            technology="React, Typescript"
+            link="https://baoqg9104.github.io/MusicZ/"
+            github="https://github.com/baoqg9104/MusicZ"
+            reference={[]}
+          />
         </div>
       </div>
     </>
