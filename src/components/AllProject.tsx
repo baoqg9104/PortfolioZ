@@ -32,7 +32,7 @@ function AllProject() {
           <ProjectTag
             _backgroundImage={musicZ}
             name="MusicZ"
-            technology="React, Typescript"
+            technology="React, Typescript, Bootstrap"
             link="https://baoqg9104.github.io/MusicZ/"
             github="https://github.com/baoqg9104/MusicZ"
             reference={[]}
