@@ -170,7 +170,7 @@ function ProjectTag({
                 </a>
               </p>
               <p style={{ color: "#adadad" }}>
-                Techlonogies:{" "}
+                Technologies:{" "}
                 <span style={{ color: "white" }}>{technology}</span>
               </p>
 

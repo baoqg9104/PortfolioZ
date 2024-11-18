@@ -11,7 +11,7 @@ function AllProject() {
           <ProjectTag
             _backgroundImage={_300baicodeZ_img}
             name="300 Bài Code Thiếu Nhi"
-            technology="HTML, CSS, JavaScript"
+            technology="HTML, CSS, JavaScript, Bootstrap"
             link="https://baoqg9104.github.io/300baicodeZ/"
             github="https://github.com/baoqg9104/300baicodeZ"
             reference={[`https://leetcode.com/`, `https://300baicode.com/`]}

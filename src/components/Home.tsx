@@ -1,7 +1,11 @@
 import styles from "../styles/Home.module.css";
 import avatar from "../assets/avatar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDownload,
+  faEnvelope,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +24,15 @@ function Home() {
 
   const handleNavigate = () => {
     navigate("/PortfolioZ/about");
-  }
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "SE180449_QUACHGIABAO.pdf"; 
+    link.download = "QuachGiaBao_CV.pdf"; 
+    link.click();
+  };
+
 
   return (
     <>
@@ -48,10 +60,19 @@ function Home() {
                   icon={faUser}
                   style={{ color: "#ffffff", marginRight: "8px" }}
                 />
-                <span style={{color: "white", fontSize: "18px", fontWeight: "550"}}>About me</span>
+                <span
+                  style={{
+                    color: "white",
+                    fontSize: "18px",
+                    fontWeight: "550",
+                  }}
+                >
+                  About me
+                </span>
                 {/* About me */}
               </button>
               <button
+                onClick={handleDownload}
                 className={`text-center ms-5 text-light btn rounded rounded-5 ps-4 pe-4 p-2 ${styles.downloadCV}`}
                 style={{ backgroundColor: "#343840", fontSize: "18px" }}
               >
@@ -63,12 +84,16 @@ function Home() {
               </button>
             </div>
           </div>
-          <div className={`col-6 flex-column justify-content-center align-items-center ${styles.avatarContainer}`}>
+          <div
+            className={`col-6 flex-column justify-content-center align-items-center ${styles.avatarContainer}`}
+          >
             <div className={`${styles.avatar}`}>
               <img src={avatar} alt="" width={"450px"} />
             </div>
           </div>
-          <div className={`col-1 d-flex justify-content-center align-items-center ${styles.brandList}`}>
+          <div
+            className={`col-1 d-flex justify-content-center align-items-center ${styles.brandList}`}
+          >
             <a
               className={`${styles.brandIcon} mb-4`}
               href="https://www.facebook.com/gbao307"
@@ -121,8 +146,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      
     </>
   );
 }
